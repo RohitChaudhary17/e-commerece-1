@@ -1,0 +1,23 @@
+#carouselExampleIndicators{
+  margin-top: 4%;
+  height: 50vh;
+}
+
+.carousel-item img{
+  height: 50vh;
+}
+
+
+@media (max-width:990px){
+
+  #carouselExampleIndicators{
+    margin-top: 6%;
+    height: 50vh;
+  }
+
+  .carousel-item img{
+    height: 40vh;
+  }
+}
+
+
