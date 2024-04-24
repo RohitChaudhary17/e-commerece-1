@@ -1,6 +1,7 @@
 import "./NavBar.css"
 import NavLogo from "./NavLogo";
-
+import bag from "./bag.png"
+import wish from "./wishlist.png"
 
 const NavItems = () =>{
 
@@ -27,12 +28,12 @@ return (<>
     <div className="nav-wishlist-bag">
        
        <div className="wishlist">
-        <img src="\src\assets\wishlist.png" />
+        <img src={wish} />
         <h5>Wishlist</h5>
        </div>
 
        <div className="bag">
-        <img src="\src\assets\bag.png" />
+        <img src={bag} />
         <h5>Bag</h5>
        </div>
 
