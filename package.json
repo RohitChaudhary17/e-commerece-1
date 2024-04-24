@@ -2,7 +2,6 @@
   "name": "info_project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://RohitChaudhary17.github.io/e-commerece-1",
   "type": "module",
   "scripts": {
     "dev": "vite",
