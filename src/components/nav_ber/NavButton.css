@@ -1,0 +1,39 @@
+#side-body{
+  border:1px solid red;
+}
+
+.css-category-div {
+  padding: 5%;
+  cursor: pointer;
+  margin-top: 8%;
+}
+
+.css-sidebar-main {
+  background-color: #f0ebe3;
+  text-align: center;
+}
+
+.nav-search-side{
+  width:90%;
+  
+  }
+  
+  .nav-search-side input{
+    width: 100%;
+    padding: 2% 1%;
+    border-radius: 5px;
+  }
+
+.css-category-div:hover {
+  background-color: #f6f5f2;
+}
+
+.css-category-name {
+  font-weight: 600;
+}
+
+.css-category-img {
+  width: 20px;
+  margin-right: 5%;
+}
+

@@ -1,9 +1,9 @@
 
 import React from 'react';
 import './CarouselPage.css';
-import i1 from './img1.png'
-import i2 from './img2.png'
-import i3 from './img3.png'
+import i1 from './img1.jpg'
+import i2 from './img2.jpg'
+import i3 from './img3.jpg'
 
 
 const CarouselPage = () => {

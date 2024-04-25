@@ -1,0 +1,111 @@
+
+
+.carousel-m-main{
+  
+  width: 100%;
+  background-color: powderblue;
+ margin-top: 5%;
+ display: none;
+}
+
+.carousel-m-top{
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-m-top-right{
+  width: 50%;
+  padding: 2%;
+}
+
+.carousel-m-top-right h4{
+  font-weight: 700;
+  font-size: 4vw;
+  letter-spacing: 10%;
+  font-family: sans-serif;
+}
+
+.carousel-m-top-right h5{
+  font-weight: 200;
+  font-size: 3.5vw;
+}
+
+.carousel-m-top-left{
+  width: 50%;
+  text-align: end;
+  
+}
+
+.carousel-m-top-left button{
+  width:50%;
+  font-size: 3vw;
+  margin-right: 5%;
+  border: none;
+  border-radius: 5px;
+  background: palevioletred;
+  font-weight: 500;
+  color:white;
+  padding: 4% 0;
+}
+
+
+
+.carousel-m-mid{
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-m-card{
+  width: 100%;
+  padding: 1.5%;
+  /* display: flex;
+  flex-direction: column; */
+  cursor: pointer;
+}
+
+.carousel-m-card:hover{
+  background-color: white;
+  border-radius: 7px;
+}
+
+.carousel-m-card img{
+  width: 100%;
+  height: 25vh;
+  border-radius: 7px;
+  
+}
+
+.carousel-m-card h5{
+  margin-top: 3%;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 2vw;
+  text-align: center;
+}
+
+
+.carousel-m-bottom{
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+@media (max-width:990px){
+
+  .carousel-m-main{
+    margin-top: 3%;
+    display: block;
+  }
+
+}
