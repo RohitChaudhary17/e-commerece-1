@@ -1,22 +1,22 @@
 #carouselExampleIndicators{
   margin-top: 4%;
-  height: 50vh;
+  height: 55vh;
 }
 
 .carousel-item img{
-  height: 50vh;
+  height: 55vh;
 }
 
 
-@media (max-width:990px){
+@media (max-width:900px){
 
   #carouselExampleIndicators{
     margin-top: 6%;
-    height: 50vh;
+    height: 40vh;
   }
 
   .carousel-item img{
-    height: 50vh;
+    height: 40vh;
   }
 }
 

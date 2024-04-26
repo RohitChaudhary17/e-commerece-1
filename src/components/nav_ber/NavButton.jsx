@@ -68,30 +68,30 @@ function NavButton() {
 
         <div class="css-category-div" >
           <img src={men} class="css-category-img" />
-          <span class="css-category-name">Men</span>
+          <a href="#"><span class="css-category-name">Men</span></a>
         </div>
 
         <div class="css-category-div" >
           <img src={women} class="css-category-img" />
-          <span class="css-category-name">Women</span>
+          <a href="#"><span class="css-category-name">Women</span></a>
         </div>
 
 
         <div class="css-category-div" >
           <img src={kid} class="css-category-img" />
-          <span class="css-category-name">Kid</span>
+          <a href="#"><span class="css-category-name">Kid</span></a>
         </div>
 
 
         <div class="css-category-div" >
           <img src={home} class="css-category-img" />
-          <span class="css-category-name">Home & Living</span>
+          <a href="#"><span class="css-category-name">Home & Livings</span></a>
         </div>
 
 
         <div class="css-category-div" >
           <img src={beauty} class="css-category-img" />
-          <span class="css-category-name">Beauty</span>
+          <a href="#"><span class="css-category-name">Beauty</span></a>
         </div>
 
 

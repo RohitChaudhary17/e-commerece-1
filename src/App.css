@@ -1,0 +1,9 @@
+
+.load-more-btn{
+  background-color:palevioletred;
+  padding: 0.5% 2%;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}

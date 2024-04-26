@@ -28,6 +28,11 @@
   background-color: #f6f5f2;
 }
 
+.css-category-div a{
+  text-decoration: none;
+  color: black;
+}
+
 .css-category-name {
   font-weight: 600;
 }
