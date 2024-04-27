@@ -9,7 +9,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 4rem;
-  
+}
+
+.active {
+  display: none;
 }
 
 .card-container {
@@ -130,20 +133,7 @@
 }
 
 
-/* load more button /////////////////////////////////////////////////////////////////////////////////// */
-/* .load-more-div{
-  border:1px solid red;
-  width: 100%;
-} */
 
-.load-more{
-  background-color:palevioletred;
-  padding: 0.5% 2%;
-  font-family: sans-serif;
-  border: none;
-  border-radius: 5px;
-  color: white;
-}
 
 
 

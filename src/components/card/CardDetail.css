@@ -1,0 +1,149 @@
+
+.Card-details-main{
+  border:1px solid red;
+  width:100%;
+  display: flex;
+ align-items: center;
+}
+
+
+.Card-details-right{
+  width: 60%; 
+  padding: 1%;
+}
+.Card-details-right img{
+  width: 100%;
+}
+
+
+
+
+.Card-details-left{
+  width: 40%;
+  padding: 2%;
+}
+
+
+
+
+.brand-name-rating{
+  width: 100%;
+  padding: 1%;
+}
+
+.brand-name-rating h2{
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+
+.brand-name-rating h3{
+  font-family: gilroy;
+  color: #757884;
+  font-size: 1.4rem;
+}
+
+.rating-1{
+  border: 2px solid #D4D5D9;
+  width: 30%;
+  padding: 1.5% 1%;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.rating-1:hover{
+  border:2px solid black;
+}
+
+
+
+
+.price-chart-bag{
+ width:100%;
+ padding: 1%;
+}
+
+
+
+.price-chart-bag h3{
+  font-size: 1.4rem;
+
+}
+
+.price-chart-bag p{
+  font-size: 1.rem;
+  font-weight: 700;
+  color: springgreen;
+}
+
+.price-chart-bag h4{
+  font-size: 1.1rem;
+  font-weight: 700;
+  
+}
+
+
+.chart-size-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 2%;
+}
+
+
+.chart-size{
+    cursor: pointer;
+    width: 50px; 
+    height: 50px; 
+    border:2px solid #D4D5D9;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+.chart-size:hover{
+  border:2px solid palevioletred;
+}
+
+
+
+.bag-wishlist{
+  width:100%;
+  padding: 1%;
+  display: flex;
+  gap:2%;
+}
+
+
+.card-details-bag-btn{
+  width: 50%;
+  padding: 1.7% 0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: pink;
+  border: none;
+}
+
+
+.card-details-wishlist-btn{
+  width: 30%;
+  padding: 1.7% 0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 1px solid #D4D5D9;
+  background-color: white;
+}
+
+
+.card-details-wishlist-btn:hover{
+  border: 1px solid black;
+}
+

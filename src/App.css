@@ -8,3 +8,13 @@
   color: white;
   margin-top: 2%;
 }
+
+.load-less-btn{
+  background-color:powderblue;
+  padding: 0.5% 2%;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 2%;
+}

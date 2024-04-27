@@ -1,12 +1,16 @@
 
+
+//original
 import React from 'react';
 import "./Card.css";
 import bagImg from "./bag.png"
+import CardDetails from './CardDetails';
 
 function Card({ title, description, price, category, image, rating }) {
   return (
     <>
       
+
         <div className="card-container">
           <div className="card-top">
             <img src={image} alt={title} className="card-img" />
@@ -26,6 +30,7 @@ function Card({ title, description, price, category, image, rating }) {
             <button className="btn-add-bag" onClick={() => addToBag(item.id)}><img src={bagImg} className='bag-img'/> Add to Bag</button>
           </div>
         </div>
+      
       
   </>
   );

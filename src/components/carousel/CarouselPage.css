@@ -1,5 +1,5 @@
 #carouselExampleIndicators{
-  margin-top: 4%;
+  margin-top: 8%;
   height: 55vh;
 }
 
@@ -11,7 +11,7 @@
 @media (max-width:900px){
 
   #carouselExampleIndicators{
-    margin-top: 6%;
+    margin-top: 10%;
     height: 40vh;
   }
 
@@ -21,3 +21,4 @@
 }
 
 
+ 
