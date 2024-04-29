@@ -11,6 +11,8 @@
   width: 60%; 
   padding: 1%;
 }
+
+
 .Card-details-right img{
   width: 100%;
 }
@@ -147,3 +149,27 @@
   border: 1px solid black;
 }
 
+
+
+@media (max-width:900px){
+
+  .Card-details-main{
+    border:1px solid red;
+    width:100%;
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+  }
+
+  .Card-details-right{
+    width: 100%; 
+    padding: 1%;
+  }
+
+  .Card-details-left{
+    width: 100%;
+    padding: 2%;
+    
+  }
+
+}

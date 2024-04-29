@@ -10,7 +10,6 @@ function CardDetails(){
 return (<>
 
 
-
 <div className="Card-details-main">
 
   <div className="Card-details-right">
@@ -53,12 +52,7 @@ return (<>
 </div>
 
   </div>
-
-
-
 </div>
-
-
 </>)
 
 }

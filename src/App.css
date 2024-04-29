@@ -18,3 +18,15 @@
   color: white;
   margin-top: 2%;
 }
+
+
+@media(max-width:900px){
+  
+  .load-more-btn{
+    display: none;
+  }
+
+  .load-less-btn{
+    display: none;
+  }
+}

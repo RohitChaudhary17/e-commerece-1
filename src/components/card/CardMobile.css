@@ -1,0 +1,53 @@
+#card-mobile-main{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.item-details{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 1rem;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+
+#card-mobile-main:hover .item-details{
+  transform: translateY(0);
+}
+
+.title {
+  color:black;
+  font-size: 1.5rem;
+  color: #FF905A;
+}
+
+.price{
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #404353;
+}
+
+
+
+
+
+
+
+
+@media (min-width:900px){
+  
+#card-mobile-main{
+  display: none;
+}
+
+}

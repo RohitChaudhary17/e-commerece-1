@@ -11,12 +11,14 @@
 @media (max-width:900px){
 
   #carouselExampleIndicators{
-    margin-top: 10%;
+    margin-top: 15%;
     height: 40vh;
+    
   }
 
   .carousel-item img{
     height: 40vh;
+  
   }
 }
 
