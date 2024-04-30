@@ -21,7 +21,15 @@ function CardDetails({ data }) {
             <h3>₹{data.price}</h3>
             <p>inclusive of all taxes</p>
             <h4>Select size</h4>
-            {/* Add size options here if needed */}
+            
+            <div className="chart-size-div">
+              <div className="chart-size">XS</div>
+              <div className="chart-size">S</div>
+              <div className="chart-size">M</div>
+              <div className="chart-size">L</div>
+              <div className="chart-size">XL</div>
+            </div>
+
           </div>
 
           <div className="bag-wishlist">
