@@ -1,5 +1,4 @@
 
-
 //real
 import "./NavBar.css";
 import NavItems from "./NavItems";

@@ -2,7 +2,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
   text-align: center;
-
+  padding: 1%;
   position: relative;
   overflow: hidden;
 }
@@ -40,14 +40,24 @@
 
 
 
+@media (min-width: 900px) {
+  #card-mobile-main {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  #card-mobile-main {
+    display: block; /* or any other display property that suits your layout */
+  }
+}
 
 
 
-
-@media (min-width:900px){
+/* @media (min-width:900px){
   
 #card-mobile-main{
   display: none;
 }
 
-}
+} */

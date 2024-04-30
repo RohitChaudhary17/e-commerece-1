@@ -1,20 +1,26 @@
 
 .Card-details-main{
-  border:1px solid red;
+  
   width:100%;
   display: flex;
  align-items: center;
+ margin-top: 10%;
+
 }
 
 
 .Card-details-right{
   width: 60%; 
   padding: 1%;
+  
+  display: flex;
+  justify-content: center;
 }
 
 
 .Card-details-right img{
-  width: 100%;
+  width: 70%;
+  height: 50vh;
 }
 
 
@@ -154,11 +160,12 @@
 @media (max-width:900px){
 
   .Card-details-main{
-    border:1px solid red;
+    
     width:100%;
     display: flex;
    align-items: center;
    flex-direction: column;
+   margin-top: 15%;
   }
 
   .Card-details-right{

@@ -1,3 +1,5 @@
+
+// //origianl
 import "./NavBar.css"
 import NavLogo from "./NavLogo";
 import bag from "./bag.png"
@@ -13,8 +15,8 @@ return (<>
 
        <a href="#"><h2>Men</h2></a> 
        <a href="#"><h2>Women</h2></a>
-       <a href="#"><h2>Kids</h2></a>
-       <a href="#"><h2>Home & livings</h2></a>
+       <a href="#"><h2>Electronics</h2></a>
+       <a href="#"><h2>Jewelery</h2></a>
        <a href="#"><h2>Beauty</h2></a>
        
     </div>

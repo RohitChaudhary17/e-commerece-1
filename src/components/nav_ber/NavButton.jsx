@@ -6,8 +6,8 @@ import "./NavButton.css"
 import beauty from "./img/beauty.png"
 import men from "./img/men.png"
 import women from "./img/women.png"
-import kid from "./img/kid.png"
-import home from "./img/home.png"
+import electronics from "./img/electronics.png"
+import jewelery from "./img/jewelery.png"
 
 function NavButton() {
   const [show, setShow] = useState(false);
@@ -44,14 +44,14 @@ function NavButton() {
 
 
         <div class="css-category-div" >
-          <img src={kid} class="css-category-img" />
-          <a href="#"><span class="css-category-name">Kid</span></a>
+          <img src={electronics} class="css-category-img" />
+          <a href="#"><span class="css-category-name">Electronic</span></a>
         </div>
 
 
         <div class="css-category-div" >
-          <img src={home} class="css-category-img" />
-          <a href="#"><span class="css-category-name">Home & Livings</span></a>
+          <img src={jewelery} class="css-category-img" />
+          <a href="#"><span class="css-category-name">Jewelery</span></a>
         </div>
 
 
