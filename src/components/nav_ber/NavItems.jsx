@@ -1,52 +1,81 @@
-
 // //origianl
-import "./NavBar.css"
+import "./NavBar.css";
 import NavLogo from "./NavLogo";
-import bag from "./bag.png"
-import wish from "./wishlist.png"
+import wish from "./wishlist.png";
+import { useContext, useState } from "react";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import bag from "./bag.png";
+import { Items } from "../../Store/MainStore";
+import { TiDelete } from "react-icons/ti";
 
-const NavItems = () =>{
+const NavItems = () => {
+  const [show, setShow] = useState(false);
+  let { BagItems, Wishlist } = useContext(Items);
 
-return (<>
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  return (
+    <>
+      <NavLogo />
 
-  <NavLogo />
-   
-    <div className="nav-items">
+      <div className="nav-items">
+        <a href="#">
+          <h2>Men</h2>
+        </a>
+        <a href="#">
+          <h2>Women</h2>
+        </a>
+        <a href="#">
+          <h2>Electronics</h2>
+        </a>
+        <a href="#">
+          <h2>Jewelery</h2>
+        </a>
+        <a href="#">
+          <h2>Beauty</h2>
+        </a>
+      </div>
 
-       <a href="#"><h2>Men</h2></a> 
-       <a href="#"><h2>Women</h2></a>
-       <a href="#"><h2>Electronics</h2></a>
-       <a href="#"><h2>Jewelery</h2></a>
-       <a href="#"><h2>Beauty</h2></a>
-       
-    </div>
-
-
-    <div className="nav-search">
+      <div className="nav-search">
         <input type="text" placeholder="search for products,brands and more" />
-    </div>
+      </div>
 
+      <div className="nav-wishlist-bag">
+        <div className="wishlist">
+          <img src={wish} />
+          <h5>Wishlist</h5>
+          <span>{Wishlist.length}</span>
+        </div>
 
-    <div className="nav-wishlist-bag">
-       
-       <div className="wishlist">
-        <img src={wish} />
-        <h5>Wishlist</h5>
-       </div>
+        <div className="bag" variant="primary" onClick={handleShow}>
+          <img src={bag} />
+          <h5>Bag</h5>
+          <span>{BagItems.length}</span>
+        </div>
 
-       <div className="bag">
-        <img src={bag} />
-        <h5>Bag</h5>
-       </div>
+        <Offcanvas show={show} onHide={handleClose} placement="end">
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title>Shopping Bag</Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body id="bag-list-main">
+            <p>This is your Shopping bag list</p>
 
-    </div>
+            {BagItems.map((item) => (
+              <div className="bag-list-main-div">
+                <div className="bag-items">
+                  <img src={item.image} alt={item.title} />
+                  <TiDelete />
+                  <h4>{item.title}</h4>
+                </div>
+              </div>
+            ))}
 
-
-
-
-</>)
-
-
-}
+            <button type="button">Place Order</button>
+          </Offcanvas.Body>
+        </Offcanvas>
+      </div>
+    </>
+  );
+};
 
 export default NavItems;

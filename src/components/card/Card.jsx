@@ -1,9 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from "react";
 import "./Card.css";
 import bagImg from "./bag.png";
-import CardMobile from './CardMobile';
+import CardMobile from "./CardMobile";
+import { useNavigate } from "react-router-dom";
+import { Items } from "../../Store/MainStore";
 
-function Card({ title, description, price, category, image, rating, onClick, onButtonClick }) {
+function Card({
+  title,
+  description,
+  price,
+  category,
+  image,
+  rating,
+  onClick,
+  onButtonClick,
+  handleOnClick,
+}) {
+  let navigate = useNavigate();
+  let { AddItems, selectedCard } = useContext(Items);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 900);
 
   useEffect(() => {
@@ -11,23 +25,25 @@ function Card({ title, description, price, category, image, rating, onClick, onB
       setIsMobile(window.innerWidth < 900);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   const addToBag = (event) => {
     event.stopPropagation();
     if (onButtonClick) {
-      onButtonClick(); 
+      onButtonClick();
     }
+    handleOnClick();
   };
 
   const handleClick = () => {
     if (onClick) {
-      onClick(); 
+      onClick();
+      navigate("/card-detail");
     }
   };
 
@@ -52,7 +68,7 @@ function Card({ title, description, price, category, image, rating, onClick, onB
           <span className="discount">20% OFF</span>
         </div>
         <button className="btn-add-bag" onClick={addToBag}>
-          <img src={bagImg} className='bag-img'/> Add to Bag
+          <img src={bagImg} className="bag-img" /> Add to Bag
         </button>
       </div>
     </div>
@@ -60,50 +76,3 @@ function Card({ title, description, price, category, image, rating, onClick, onB
 }
 
 export default Card;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

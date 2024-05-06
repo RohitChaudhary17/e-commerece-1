@@ -1,17 +1,21 @@
-import "./NavBar.css"
-import i1 from "./mynta-logo.png"
+import { useNavigate } from "react-router-dom";
+import "./NavBar.css";
+import i1 from "./mynta-logo.png";
 
-function NavLogo(){
+function NavLogo() {
+  let navigate = useNavigate();
 
-return (<>
+  let handleOnClick = () => {
+    navigate("/");
+  };
 
-<div id="nav-img" >
+  return (
+    <>
+      <div id="nav-img" onClick={handleOnClick}>
         <img src={i1} alt="Mynta Logo" />
-        
-    </div>
-
-</>)
-
+      </div>
+    </>
+  );
 }
 
 export default NavLogo;
