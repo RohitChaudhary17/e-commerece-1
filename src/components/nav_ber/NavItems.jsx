@@ -42,8 +42,10 @@ const NavItems = () => {
 
       <div className="nav-wishlist-bag">
         <div className="wishlist">
+        
           <img src={wish} />
           <h5>Wishlist</h5>
+        
           <span>{Wishlist.length}</span>
         </div>
 
@@ -63,9 +65,19 @@ const NavItems = () => {
             {BagItems.map((item) => (
               <div className="bag-list-main-div">
                 <div className="bag-items">
+
+                <div className="cancel-icon-div">
+                <TiDelete className="cancel-icon" />
+                </div>
+
+                <div className="side-bag-img-div">
                   <img src={item.image} alt={item.title} />
-                  <TiDelete />
+                  </div>
+
+                  <div className="side-bag-title-div">
                   <h4>{item.title}</h4>
+                  </div>
+
                 </div>
               </div>
             ))}

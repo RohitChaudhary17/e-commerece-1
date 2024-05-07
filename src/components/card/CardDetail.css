@@ -12,15 +12,23 @@
 .Card-details-right{
   width: 60%; 
   padding: 1%;
-  
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 
 
 .Card-details-right img{
-  width: 70%;
+  width: 50%;
   height: 50vh;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+
+.Card-details-right:hover img{
+  transform: scale(1.2);
 }
 
 
@@ -135,7 +143,7 @@
   border-radius: 5px;
   font-size: 1.2rem;
   font-weight: 600;
-  background-color: pink;
+  background-color: #DB7093;
   border: none;
 }
 
@@ -171,6 +179,11 @@
   .Card-details-right{
     width: 100%; 
     padding: 1%;
+  }
+
+  .Card-details-right img{
+    min-width: 350px;
+    max-width: 500px;
   }
 
   .Card-details-left{

@@ -70,6 +70,7 @@
   margin-left: 4%;
   align-items: center;
   padding: 2.2% 0;
+  
 }
 
 .nav-wishlist-bag h5 {
@@ -108,6 +109,7 @@
   top: -55px;
   font-weight: 700;
   cursor: pointer;
+  
 }
 
 .bag {
@@ -122,6 +124,7 @@
   position: absolute;
   left: 80%;
   top: 22%;
+
 }
 
 .bag span {
@@ -147,22 +150,43 @@
 
 .bag-items {
   display: flex;
-
   padding: 2% 1%;
   align-items: center;
   border-radius: 5px;
   margin-top: 5%;
   justify-content: space-between;
   text-align: center;
+  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1);
 }
 
 .bag-items:hover {
   background-color: #f6f5f2;
 }
 
+.cancel-icon-div{
+  width: 10%;
+  margin-right: 2%;
+}
+
+.cancel-icon{
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+  
+}
+
+.side-bag-img-div{
+  width: 25%;
+}
+
 .bag-items img {
-  height: 4vw;
+  height: 3.5vw;
   border-radius: 5px;
+}
+
+
+.side-bag-title-div{
+  width: 60%;
 }
 
 .bag-items h4 {

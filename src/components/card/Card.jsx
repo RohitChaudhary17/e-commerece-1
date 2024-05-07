@@ -53,24 +53,31 @@ function Card({
 
   return (
     <div className="card-container" onClick={handleClick}>
+      
       <div className="card-top">
         <img src={image} alt={title} className="card-img" />
       </div>
-      <div className="card-bottom">
-        <div className="rating">
+
+
+      <div className="rating">
           {rating.rate} ⭐ | {rating.count} reviews
         </div>
         <div className="company-name">{title}</div>
         <div className="item-name">{description}</div>
         <div className="price">
-          <span className="current-price">Rs {price}</span>
-          <span className="original-price">Rs {price + 234}</span>
+          <span className="current-price">Rs {Math.round(price + 250)}</span>
+          <span className="original-price">Rs {Math.round(price + 500)}</span>
           <span className="discount">20% OFF</span>
         </div>
+
+      
+      <div className="card-bottom">
         <button className="btn-add-bag" onClick={addToBag}>
           <img src={bagImg} className="bag-img" /> Add to Bag
         </button>
       </div>
+
+
     </div>
   );
 }

@@ -1,5 +1,3 @@
-// //original
-
 import NavBar from "./components/nav_ber/NavBar";
 import "./App.css";
 import Footer from "./components/footer/Footer";
@@ -9,15 +7,7 @@ import { Outlet } from "react-router-dom";
 
 
 function App() {
-  //let { isLoading, error } = useContext(Items);
-
-  // if (isLoading) {
-  //   return <div>Loading...</div>;
-  // }
-
-  // if (error) {
-  //   return <div>Error: {error.message}</div>;
-  // }
+  
 
   return (
     <MainStore>

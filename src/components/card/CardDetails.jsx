@@ -7,16 +7,13 @@ function CardDetails() {
   let { selectedCard, AddItems, AddItemsW, BagItems, Wishlist } =
     useContext(Items);
   let data = selectedCard;
-  // let handleOnClickW = (data) => {
-  //   if (!BagItems.includes(data)) {
-  //     AddItemsW(data);
-  //   }
-  // };
+  
 
   return (
     <div className="Card-details-main">
+      
       <div className="Card-details-right">
-        <img src={data.image} alt={data.title} />
+        <img src={data.image} alt={data.title} className="cardDetails-img" />
       </div>
 
       <div className="Card-details-left">
